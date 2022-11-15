@@ -9,9 +9,3 @@ scount = olympics.count_documents({"country":"THA", "medal":"Silver"})
 bcount = olympics.count_documents({"country":"THA", "medal":"Bronze"})
 print('Thailand has', gcount, 'golds, ', scount, 'silvers, and', bcount, 'bronzes.')
 
-"""
-for m in olympics.find({"country": "THA"}):
-    if m ['sport'] != 'Boxing':
-        print(m["athlete"])
-
-"""
